@@ -1,0 +1,38 @@
+{
+  "name": "switchboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/src/ws_parser.js",
+  "types": "dist/src/ws_parser.d.ts",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon",
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "author": "Nathan Lee",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^8.3.2",
+    "ws": "^8.4.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "@types/ws": "^8.2.2",
+    "jest": "^27.4.5",
+    "kill-port": "^1.6.1",
+    "ts-jest": "^27.1.2",
+    "@types/uuid": "^8.3.4"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|js|html)$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  }
+}
