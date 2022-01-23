@@ -15,7 +15,7 @@ npm i switchboards
 ## Core Components
 ### Requests
 Designed to be very similiar to Express js, but completely implemented in websockets. <br>
-#### Client
+#### Server
 ```javascript
 import { WS_Handler } from "switchboards";
 
@@ -26,7 +26,7 @@ app.get("root", (args) => {
 })
 ```
 
-#### Server
+#### Client
 ```javascript
 let client = new WS_Interface("ws://localhost:5000");
 await client.initialize()
