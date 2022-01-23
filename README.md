@@ -17,7 +17,7 @@ npm i switchboards
 Designed to be very similiar to Express js, but completely implemented in websockets. <br>
 #### Client
 ```javascript
-import { WS_Handler } from "switchboard";
+import { WS_Handler } from "switchboards";
 
 const app = new WS_Handler(5000);
 
@@ -35,7 +35,7 @@ await client.get("root", {name: "Nathan"})
 ```
 
 **Why not just use Express?**  
-I've found that trying to make a hybrid webapp with Express and Websockets gets clumsy, and often I just need basic response endpoints. Websockets are more flexible, with bidirectional communication and unlimited request times
+I've found that trying to make a hybrid webapp with Express and Websockets gets clumsy, and often I just need basic response endpoints. Websockets are more flexible, with bidirectional communication which can do things like unlimited request times
 
 ### Pub Sub
 A basic pub sub implementation that allows the server to push events to clients.
