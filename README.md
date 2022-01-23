@@ -41,7 +41,7 @@ I've found that trying to make a hybrid webapp with Express and Websockets gets 
 A basic pub sub implementation that allows the server to push events to clients.
 #### Client
 ```javascript
-const sub:Sub = await ws_client.subscribe("test_sub");
+const sub = await ws_client.subscribe("test_sub");
 sub.onMessage((message) => {
     console.log("sub", message);
 })
