@@ -6,8 +6,14 @@ Has a backend server library with an accompanying frontend browser library. This
 
 Has Typescript support!
 
+**Server**
 ```
 npm i switchboards
+```
+
+**Client**
+```
+npm i switchboards_client
 ```
 
 **Note:** this is highly experimental and should be used with caution
