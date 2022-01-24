@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
-import { message } from '../../backend_library/src/ws_user';
-import { get_return, get_request, sub_response, data_push } from "../../backend_library/src/ws_parser";
+import { message } from '../../server_library/src/ws_user';
+import { get_return, get_request, sub_response, data_push } from "../../server_library/src/ws_parser";
 import { Sub } from './sub';
 
 class prom_wrapper {

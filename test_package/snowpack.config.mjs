@@ -8,8 +8,5 @@ export default {
     bundle: true,
     minify: true,
     target: 'es2018',
-    entrypoints: [
-      "src/ws_interface.ts"
-    ]
   },
 };

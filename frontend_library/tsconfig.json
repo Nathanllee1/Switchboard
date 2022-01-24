@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
     "target": "es5",
     "sourceMap": true,
     "declaration": true,
@@ -13,10 +12,9 @@
       "scripthost",
       "es2015.iterable"
     ],
+    "strictPropertyInitialization": false,
   },
   "include": [
     "src",
-    "tests"
   ],
-  
 }

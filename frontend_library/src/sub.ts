@@ -2,7 +2,7 @@
 
 export class Sub {
 
-    cb:Function;
+    cb:Function = () => {};
 
     constructor() {
 

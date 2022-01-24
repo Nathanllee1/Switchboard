@@ -1,5 +1,5 @@
 {
-  "name": "switchboard",
+  "name": "switchboards",
   "version": "1.0.0",
   "description": "",
   "main": "dist/src/ws_parser.js",
@@ -34,5 +34,9 @@
       "tsx",
       "js"
     ]
+  },
+  "respository": {
+    "type": "git",
+    "url": "git+https://github.com/Nathanllee1/Switchboard.git"
   }
 }
