@@ -6,8 +6,14 @@ Has a backend server library with an accompanying frontend browser library. This
 
 Has Typescript support!
 
+**Server**
 ```
 npm i switchboards
+```
+
+**Client**
+```
+npm i switchboards_client
 ```
 
 **Note:** this is highly experimental and should be used with caution
@@ -15,9 +21,9 @@ npm i switchboards
 ## Core Components
 ### Requests
 Designed to be very similiar to Express js, but completely implemented in websockets. <br>
-#### Client
+#### Server
 ```javascript
-import { WS_Handler } from "switchboard";
+import { WS_Handler } from "switchboards";
 
 const app = new WS_Handler(5000);
 
@@ -26,7 +32,7 @@ app.get("root", (args) => {
 })
 ```
 
-#### Server
+#### Client
 ```javascript
 let client = new WS_Interface("ws://localhost:5000");
 await client.initialize()
@@ -35,13 +41,13 @@ await client.get("root", {name: "Nathan"})
 ```
 
 **Why not just use Express?**  
-I've found that trying to make a hybrid webapp with Express and Websockets gets clumsy, and often I just need basic response endpoints. Websockets are more flexible, with bidirectional communication and unlimited request times
+I've found that trying to make a hybrid webapp with Express and Websockets gets clumsy, and often I just need basic response endpoints. Websockets are more flexible, with bidirectional communication which can do things like unlimited request times
 
 ### Pub Sub
 A basic pub sub implementation that allows the server to push events to clients.
 #### Client
 ```javascript
-const sub:Sub = await ws_client.subscribe("test_sub");
+const sub = await ws_client.subscribe("test_sub");
 sub.onMessage((message) => {
     console.log("sub", message);
 })
